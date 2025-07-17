@@ -10,7 +10,12 @@ gugus_fungsi_kamus = {
     'NH2': 'Amina',
     'COO': 'Ester',
     'C=C': 'Alkena',
-    'C≡C': 'Alkina'
+    'C≡C': 'Alkuna',
+    'C-C': 'Alkana',
+    'C6H5-': 'Fenil'
+    
+
+    
 }
 
 # Fungsi identifikasi
