@@ -1,6 +1,4 @@
-from flask import Flask, render_template, request
-
-app = Flask(_name_)
+app = Flask(_Identifikasi Gugus Fungsi dan Tata Nama Senyawa Organik_)
 
 # Kamus sederhana untuk mengenali gugus fungsi berdasarkan pola string
 gugus_fungsi_kamus = {
