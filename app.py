@@ -16,7 +16,7 @@ def identifikasi_gugus_fungsi(rumus):
             hasil.append(nama)
     return hasil if hasil else ['Tidak teridentifikasi']
 
-st.title("Identifikasi Gugus Fungsi dan Tata Nama Senyawa")
+st.title("identifikasi gugus fungsi dan tata nama senyawa")
 
 rumus = st.text_input("Masukkan rumus senyawa (contoh: CH3COOH):")
 
