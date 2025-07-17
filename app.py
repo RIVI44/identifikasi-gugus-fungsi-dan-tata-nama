@@ -22,8 +22,20 @@ rumus = st.text_input("Masukkan rumus senyawa (contoh: CH3COOH):")
 
 if rumus:
     hasil = identifikasi_gugus_fungsi(rumus)
-
     if 'Asam Karboksilat' in hasil:
         nama = f"Asam {rumus.lower()}"
     elif 'Aldehid' in hasil:
-        nama = f"…
+        nama = f"{rumus.lower()} - al"
+    elif 'Keton' in hasil:
+        nama = f"{rumus.lower()} - on"
+    elif 'Alkohol' in hasil:
+        nama = f"{rumus.lower()} - ol"
+    elif 'Amina' in hasil:
+        nama = f"{rumus.lower()} - amina"
+    else:
+        nama = "Tidak diketahui"
+
+    st.markdown("### Hasil Identifikasi:")
+    st.write(f"*Rumus:* {rumus}")
+    st.write(f"*Gugus Fungsi:* {', '.join(hasil)}")
+    st.write(f"*Nama Senyawa:* {nama}")
